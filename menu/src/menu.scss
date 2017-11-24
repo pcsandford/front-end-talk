@@ -1,0 +1,112 @@
+@import "base";
+
+body {
+	font-family:$font_family;
+	font-size:24px;
+	padding:0 50px;
+}
+
+h2 {
+	margin:20px auto;
+	display:inline-block;
+	position: relative;
+
+	&:after {
+		content:"";
+		position: absolute;
+		left:0;
+		bottom:5px;
+		width:50%;
+		height:14px;
+		background:$pink;
+		z-index:-1;
+		transition:all 0.3s;
+	}
+
+	&:hover:after {
+		transform-origin:0 0;
+		transform:scale3d(2,1,1);
+	}
+}
+
+li {
+	width:200px;
+}
+
+section {
+	border:3px solid black;
+}
+
+//== Using Floats only ==//
+section.floats {
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		float:left;
+		text-align:center;
+	}
+
+	li:first-of-type {
+		margin-right:calc(100% - 800px);
+	}
+
+	a {
+		text-decoration:none;
+		color:$black;
+		text-transform:uppercase;
+		position: relative;
+		display: block;
+		top:50%;
+		width:100%;
+		padding:20px;
+		transition:all 0.3s;
+
+		&:hover {
+			background:$blue;
+			color:$white;
+		}
+	}
+
+}
+
+section.flex {
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style:none;
+		display:flex;
+		justify-content:flex-start;
+	}
+
+	li {
+		flex:0 1 auto;
+		display:flex;
+		text-align:center;
+	}
+
+	li:first-of-type {
+		margin-right:auto;
+	}
+
+	a {
+		text-decoration:none;
+		display: block;
+		width:100%;
+		margin:auto;
+		color:$black;
+		text-transform:uppercase;
+		padding:20px;
+		transition:all 0.3s;
+
+		&:hover {
+			background:$blue;
+			color:$white;
+		}
+	}
+}

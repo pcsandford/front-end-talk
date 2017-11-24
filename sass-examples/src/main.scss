@@ -1,0 +1,31 @@
+@import "base";
+@import "layout";
+
+main {
+	@extend %main_container;
+}
+
+section {
+	@extend %section_container;
+}
+
+.button--one {
+	@include menu_button($backgroundColour:$black, $borderColour:$blue);
+}
+
+.button--two {
+	@include menu_button($backgroundColour:$blue, $borderColour:$pink);
+}
+
+.button--three {
+	@include menu_button($backgroundColour:$pink, $borderColour:$green);
+}
+
+.text--one {
+	font-size:50px;
+}
+
+.text--two {
+	@extend .text--one;
+	color:$blue;
+}

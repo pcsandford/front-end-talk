@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Font = Space Mono -->
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="cssvariables.css">
+
+	<title>CSS Variables</title>
+</head>
+<body>
+	<main>
+		<section>
+			<h1>All of this</h1>
+			<h2>shares the same</h2>
+			<p>color</p>
+		</section>
+	<button id="button">Change</button>
+	</main>
+
+
+	<script>
+
+		const colors = ["#2CEBFF", "#82F671", "#FF2CDE", "#FDFF2C"];
+		const button = document.getElementById("button");
+		const mainElement = document.querySelector("main");
+
+		button.addEventListener("click", () => {
+			let randomNumber = Math.floor(Math.random() * colors.length);
+			mainElement.style.setProperty('--color', colors[randomNumber]);
+		});
+
+	</script>
+</body>
+</html>

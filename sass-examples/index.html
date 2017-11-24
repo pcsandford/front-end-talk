@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SCSS EXAMPLES</title>
+
+	<!-- Font = Space Mono -->
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="build/styles/scssexamples.min.css">
+</head>
+<body>
+	<main>
+		<section class="container__buttons">
+			<div id="button--one" class="button--one"><p>HOME</p></div>
+			<div class="button--two"><p>ABOUT</p></div>
+			<div class="button--three"><p>CONTACT</p></div>
+		</section>
+		<section class="container__text">
+			<p class="text--one">Hello</p>
+			<p class="text--two">World!</p>
+		</section>
+	</main>
+
+	<script>
+
+		let button = document.getElementById("button--one");
+		button.addEventListener("click", () => button.classList.add("button--one--selected"));
+
+	</script>
+</body>
+</html>

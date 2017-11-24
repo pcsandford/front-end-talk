@@ -17,6 +17,35 @@ body {
 	border:5px solid black;
 	margin:auto;
 	box-shadow:10px 10px 0 rgba($black,0.4);
+
+	/*start by making this the flex container*/
+	/*display:flex;*/
+
+	/*set the direction to be row*/
+	/*flex-direction:row;*/
+
+	/*reverse the row*/
+	/*flex-direction: row-reverse;*/
+
+	/*set the direction to be column*/
+	/*flex-direction: column;*/
+
+	/*reverse the column*/
+	/*flex-direction: column-reverse;*/
+
+	/*center align the items*/
+	/*align-items: center;*/
+
+	/*remove 2 items, set as row, align to the top of the container, and add space between them*/
+	/*flex-direction: row;*/
+	/*align-items: flex-start;*/
+	/*justify-content: space-between;*/
+
+	/*add space around the items*/
+	/*justify-content: space-around;*/
+
+	/*add even space around the items*/
+	/*justify-content: space-evenly;*/
 }
 
 	.flexbox__child {
@@ -24,11 +53,18 @@ body {
 		height:100px;
 		background:#FF2CDE;
 		margin:10px;
+		font-size: 24px;
+
+		/*center the numbers in the boxes*/
 		/*display: flex;
 		justify-content: center;
 		align-items:center;*/
+
 	}
 
 	.flexbox__child:first-of-type {
 		background:#2CEBFF;
+
+		/*move just box 1 to the end*/
+		/*order:1;*/
 	}

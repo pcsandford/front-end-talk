@@ -15,10 +15,22 @@ section {
 	max-width:800px;
 	width:100%;
 	margin:100px auto;
-	display:grid;
-	grid-template-columns: 100px 1fr;
-	grid-gap:10px;
-	grid-template-rows: 1fr 3fr 1fr;
+
+	/*Start by setting display:grid*/
+	/*display:grid;*/
+
+	/*Set 2 columns of equal size*/
+	/*grid-template-columns: 1fr 1fr;*/
+
+	/*Set 3 rows, the middle row twice as big as the other two*/
+	/*grid-template-rows: 1fr 2fr 1fr;*/
+
+	/*Add a grid gap of 10px to the rows and columns*/
+	/*grid-row-gap: 10px;
+	grid-column-gap: 10px;
+*/
+	/*Or you can just say:*/;
+	/*grid-gap:10px;*/
 }
 
 div {
@@ -34,6 +46,7 @@ div {
 }
 
 .box-4 {
-	grid-row-start:3;
-	grid-column-start:2;
+	/*Change the position of box no.4*/
+	/*grid-row-start:3;*/
+	/*grid-column-start:2;*/
 }

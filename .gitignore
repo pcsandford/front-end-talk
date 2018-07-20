@@ -1,4 +1,2 @@
 .DS_Store
-animation/node_modules/
-menu/node_modules/
-sass-examples/node_modules/
+**/node_modules/

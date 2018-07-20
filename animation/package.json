@@ -17,6 +17,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-notify": "^3.0.0",
-    "browser-sync": "^2.18.8"
+    "hoek": "^5.0.3",
+    "browser-sync": "^2.18.8",
+    "mime": "^1.4.1"
   }
 }
